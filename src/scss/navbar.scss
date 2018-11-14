@@ -1,0 +1,138 @@
+#mainHeader {
+  width: 100vw;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 2;
+
+  .header-top {
+    width: 100%;
+    height: 150px;
+    background-color: $main-color;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    img.logo {
+      height: 80px;
+    }
+  }
+
+  #mainNav {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.8s;
+    transition: all 0.8s;
+    border-bottom: rgba(29, 29, 29, 0.596);
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    background-color: $main-color;
+
+    &.navbar-index{
+      background-color: transparent;
+    }
+
+    li>a {
+      color: rgb(255, 255, 255);
+      font-weight: 500s;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s;
+
+      &:hover {
+        color: $second-color;
+      }
+    }
+
+    .navbar-nav {
+      padding-top: 10px;
+      text-align: center;
+    }
+
+    .navbar-toggler {
+      background-color: $main-color;
+      color: #fff;
+    }
+  }
+
+  &.header-shrink {
+    .header-top{
+      height: 0;
+    }
+
+    #mainNav {
+      opacity: 0.9;
+      padding: 10px 0;
+      background-color: opacify($main-color,0.7);
+      box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.171);
+      
+      .brand-img {
+        height: 50px;
+      }
+
+      li>a {
+        color: rgb(255, 255, 255);
+
+        &:hover {
+          color: rgb(245, 245, 245);
+        }
+      }
+    }
+  }
+
+  .navbar-collapse {
+    transition: all 0.4s;
+  }
+
+  @media only screen and (max-width: 980px) {
+    #mainNav {
+      background-color: $main-color !important;
+      padding: 20px 30px !important;
+      .nav-brand{
+        height: 50px;
+        transition: all 0.4s;
+      }
+
+      .navbar-toggler {
+        background-color: $second-color !important;
+      }
+
+      .navbar-collapse {
+        padding: 5px 10px;
+        border-radius: 3px;
+      }
+
+      .navbar-collapse {
+        padding: 0px;
+      }
+
+      li>a {
+        color: rgb(255, 255, 255) !important;
+
+        &:hover {
+          color: $second-color !important;
+        }
+
+      }
+    }
+  }
+}

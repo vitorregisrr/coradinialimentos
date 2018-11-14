@@ -1,0 +1,74 @@
+@mixin btn() {
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 2px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.btn--outline-mainColor {
+    @include btn();
+    color: $main-color;
+    background-color: transparent;
+    border: 1.5px solid $main-color;
+
+    &:hover {
+        color: #fff !important;
+        background-color: $main-color;
+    }
+}
+
+.btn--mainColor {
+    @include btn();
+    font-size: 14px;
+    padding: 7px 12px;
+    background-color: $main-color;
+    color: #ffffff !important;
+    border-radius: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+
+    &:hover {
+        background-color: darken($main-color, 10);
+    }
+}
+
+.btn--white {
+    @include btn();
+    font-size: 14px;
+    padding: 7px 12px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1.5px solid #fff !important;
+    border-radius: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+
+    &:hover {
+        background-color: #ffff;
+        color: $main-color;
+    }
+}
+
+.btn--mainColor--small{
+    @include btn();
+    color: $main-color;
+    padding: 15px 19px;
+    background-color: rgba(255, 255, 255, 0);
+    width: auto;
+    border: 1.5px solid $main-color;
+    border-radius: 4px;
+    font-size: 14px;
+
+    &:hover {
+        color: white;
+        background-color: $main-color;
+    }
+}

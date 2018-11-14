@@ -1,0 +1,115 @@
+#sobre-nos {
+    padding-bottom: 0;
+
+    hr {
+        border: 1px solid $main-color;
+        border-width: 1.2px;
+        border-radius: 2px;
+        max-width: 50px;
+        background-color: $main-color;
+    }
+
+    #nossos-produtos,
+    .nossos-produtos {
+        min-height: 400px;
+        height: auto;
+        width: 100%;
+        color: $main-color;
+        background-image: url('../images/bgSobre.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        @media screen and(max-width: 500px) {
+            & {
+                background-size: cover;
+            }
+        }
+
+        .container-embalagens {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            padding: 60px 0 0 0;
+        }
+
+        img.img-embalagens {
+            border-radius: 4px;
+            width: 100vw;
+            text-align: center;
+            max-height: 800px;
+            object-fit: contain;
+        }
+
+        .caption {
+            color: $main-color;
+
+            .title {
+                font-weight: 500;
+                font-size: 50px;
+                text-align: left;
+                font-family: 'Brannboll';
+            }
+
+            hr {
+                margin-left: 0px;
+                margin-top: 15px;
+                margin-bottom: 25px;
+            }
+
+            .desc {
+                font-size: 15px;
+                font-weight: 400;
+                text-align: left;
+            }
+
+            .dots {
+                text-align: center;
+                font-weight: 600;
+                font-size: 80px;
+                margin-top: -70px;
+                margin-bottom: -30px;
+            }
+        }
+    }
+}
+
+#resumo-sobre,
+.resumo-sobre {
+    padding: 90px 0 50px 0;
+    background-image: url('../images/bgSobre2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    @media screen and(max-width: 500px) {
+        & {
+            background-size: cover;
+        }
+    }
+    .caption {
+        margin-bottom: 50px;
+        color: $main-color;
+
+        .title {
+            font-weight: bold;
+            font-family: 'Brannboll';
+        }
+
+        .sub-title {
+            font-weight: 400;
+        }
+
+        .desc {
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        hr {
+            margin-bottom: 30px;
+        }
+    }
+
+
+}

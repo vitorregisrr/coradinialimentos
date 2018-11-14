@@ -1,0 +1,72 @@
+
+@font-face {
+  font-family: 'Brannboll';
+  src:url('../fonts/Brannboll-Ny-Personal-Use-Only.ttf.woff') format('woff'),
+      url('../fonts/Brannboll-Ny-Personal-Use-Only.ttf.svg#Brannboll-Ny-Personal-Use-Only') format('svg'),
+      url('../fonts/Brannboll-Ny-Personal-Use-Only.ttf.eot'),
+      url('../fonts/Brannboll-Ny-Personal-Use-Only.ttf.eot') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Exo', sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+$main-color: rgb(44, 75, 143);
+$second-color: #6d9cf3;
+
+
+section{
+  padding: 70px 0;
+  .title {
+      font-weight: bold;
+      font-size: 50px;
+      text-align: center;
+      letter-spacing: -2px;
+  }
+
+  hr {
+      border: 2px solid $main-color;
+      width: 80px;
+      margin-bottom: 60px;
+  }
+}
+
+a[role="button"], button{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+main.index-main{
+  background-image: url('images/backgroundIndex.png');
+  background-size: cover;
+
+  @media screen and(max-width: 768px){
+    background-image: url();
+  }
+}
+
+@import 
+'mixins/dflex-col',
+'components/button',
+'components/produto',
+'components/video',
+'bootstrapfadein',
+'representantes',
+'sobre-nos',
+'contato',
+'footer',
+'pageContato',
+'midiasSociais',
+'mainSlider',
+'produtos-list',
+'navbar',
+'representantes',
+'galeria-imagens',
+'returntopbtn',
+'diferenciais';

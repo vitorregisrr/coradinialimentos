@@ -1,0 +1,86 @@
+#representantes, .representantes{
+    background-color: rgb(241, 241, 241);
+    color: #ffffff;
+    background-image: url('../images/bgRepresentantes.png');
+    background-size: cover;
+
+    .title{
+        text-align: left;
+        font-family: 'Brannboll';
+    }
+
+    hr {
+        border: 1px solid #ffffff;
+        border-width: 1.5px;
+        max-width: 50px;
+        margin-left: 0px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    .subTitle{
+        text-align: left;
+        margin: 0;
+    }
+
+    .description{
+        font-size: 16px;
+        color: #ffffff;
+        margin: 5px 0px 20px 0;
+    }
+    
+    button{
+        padding: 13px 9px;
+    }
+
+    #onde-encontrar, .onde-encontrar{
+        margin-bottom: 50px;
+
+        @media screen and(max-width: 767px) {
+            margin-bottom: 20px;
+        }
+        select{
+            width: 100%;
+            border: 1.5px solid #ffffff;
+            padding: 14px 10px;
+            color: #ffffff !important;
+            border-radius: 3px;
+            background-color: transparent;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+
+        @media screen and (max-width:992px){
+            &{
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    #quero-ser, .quero-ser{
+        input, textarea{
+            width: 100%;
+            border: 1.5px solid #ffffff;
+            background-color: transparent;
+            padding: 14px 10px;
+            color: #ffffff !important;
+            border-radius: 3px;
+            margin-bottom: 10px;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        input{
+            height: 60px;
+        }
+
+        textarea{
+            height: 130px;
+        }
+    }
+}

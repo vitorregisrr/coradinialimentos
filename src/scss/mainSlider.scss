@@ -1,0 +1,50 @@
+#mainSlider, .mainSlider{
+    padding: 0;
+}
+.carousel-item {
+    height:500px !important;
+    
+    img{
+        height: inherit ;
+    }
+
+    .carousel__caption {
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        animation-delay: 0.5s;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        
+        h3 {
+            color: #ffffff;
+            font-size: 4rem;
+            line-height: 90px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 3px rgba(1, 28, 41, 0.199);
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-item {
+        h2 {
+            font-size: 3rem;
+            line-height: 50px;
+        }
+
+        h3 {
+            font-size: 2rem;
+            line-height: 40px;
+        }
+    }
+}

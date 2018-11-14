@@ -1,0 +1,13 @@
+#produtos-list, .produtos-list{
+    min-height: 100vh;
+    background-image: url('../images/bgSobre2.png');
+    background-size: cover;
+    background-position: top top;
+    
+    .title{
+        font-family: 'Brannboll';
+        font-weight: bold;
+        color: $main-color;
+        font-size: 62px;
+    }
+}

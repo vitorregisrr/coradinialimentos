@@ -1,0 +1,20 @@
+#galeria-imagens, .galeria-imagens{
+    background-image: url('../images/bgGaleria.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    
+    .img-desc {
+        font-size: 27px;
+        width: 100%;
+        margin-bottom: 20px;
+        color: $main-color;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 3px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.164);
+    }
+}

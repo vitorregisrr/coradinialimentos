@@ -1,0 +1,64 @@
+#dados-contato, .dados-contato {
+  a {
+    color: #1a1a1a;
+  }
+
+  i {
+    color: $main-color;
+  }
+
+  a:hover {
+    color: darken($main-color, 10%);
+  }
+
+  font-size: 0.98rem;
+
+  strong {
+    font-size: 1.1rem;
+  }
+}
+
+.form-sm {
+  input {
+    height: 30px;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+
+  label {
+    padding: 0px !important;
+    margin: 0px 0px 4px 0px !important;
+  }
+}
+
+.form-group {
+  margin: 0px !important;
+}
+
+.contact-form {
+  .btn{
+    border: 1px solid $main-color;
+    background-color: rgba(255, 255, 255, 0);
+    color: $main-color;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+
+    &:hover{
+      background-color: $main-color;
+      color: #fff;
+    }
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
+}
+
+.map-grid iframe {
+  width: 100%;
+  height: 600px;
+  border: 0;
+}

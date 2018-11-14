@@ -1,0 +1,13 @@
+@mixin dflex-col($center){
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    flex-direction: column;
+
+    @if($center == "true"){
+        justify-content: center;
+        align-items: center;
+    }
+}
