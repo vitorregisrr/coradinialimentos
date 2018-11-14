@@ -1,6 +1,5 @@
 #Site estático Coradini Alimentos. 
 
-[Clique aqui para acessar o site no ar](www.saopedrovidracaria.com.br)
+[Clique aqui para acessar o site no ar](vitorregisrr.github.io/coradinialimentos/src)
 
-Site institucional para a empresa Vidraçaria São Pedro, situada em Bagé/RS.
-O site é responsivo, bonito e com um bom SEO.
+Site institucional para a empresa Coradini Alimentos, situada em Bagé/RS.
