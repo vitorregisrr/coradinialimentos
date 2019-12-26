@@ -1,5 +1,5 @@
-#Site estático Coradini Alimentos. 
+# Site estático Coradini Alimentos. 
 
-[Clique aqui para acessar o site no ar](https://vitorregisrr.github.io/coradinialimentos/src/)
+## [Clique aqui para acessar uma prévia estática no GHPges!](https://vitorregisrr.github.io/coradinialimentos/src/)
 
 Site institucional para a empresa Coradini Alimentos, situada em Bagé/RS.
